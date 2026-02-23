@@ -7,7 +7,7 @@ It connects to the backend deployed on Railway.
 
 ## Live Demo
 
-[Frontend Live URL](https://your-frontend-railway-url.up.railway.app)  
+[Frontend Live URL](task-manager-frontend-production-9499.up.railway.app)  
 [Backend Live URL](https://task-manager-backend-production-0fc7.up.railway.app)
 
 ---
