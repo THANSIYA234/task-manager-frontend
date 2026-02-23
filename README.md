@@ -1,35 +1,35 @@
 # Task Manager Frontend
 
-This is the **frontend** of the Task Manager application, built with **Vite + React**. It connects to the Task Manager backend deployed on [Railway](https://task-manager-backend-production-0fc7.up.railway.app/).
+This is the **frontend** of the Task Manager application, built with **Vite + React**.  
+It connects to the backend deployed on Railway.
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 [Frontend Live URL](https://your-frontend-railway-url.up.railway.app)  
-
-(Replace with your Railway frontend URL after deployment)
+[Backend Live URL](https://task-manager-backend-production-0fc7.up.railway.app)
 
 ---
 
-## ⚡ Features
+## Features
 
 - Login & Authentication
-- Task CRUD operations (Create, Read, Update, Delete)
-- Connects with backend API hosted on Railway
-- Fully responsive design for mobile and desktop
+- Task CRUD operations
+- Fully responsive for mobile and desktop
+- Connects to backend API
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Frontend:** React 18, Vite, Tailwind CSS (or your styling library)
-- **Backend API:** Node.js + NestJS + Prisma (deployed separately)
-- **HTTP Client:** Fetch API / Axios
+- React 18 + Vite
+- Tailwind CSS (or your styling library)
+- Fetch API / Axios for API requests
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -41,10 +41,10 @@ Install dependencies:
 
 npm install
 
-Create a .env file in the root folder with your backend URL:
+Create a .env file in the root folder with:
 
 VITE_API_URL=https://task-manager-backend-production-0fc7.up.railway.app
-🚀 Development
+Development
 
 Start the development server:
 
@@ -52,13 +52,33 @@ npm run dev
 
 Open http://localhost:5173
  in your browser.
-Vite supports hot-reloading, so changes are reflected instantly.
 
-🏗 Build for Production
+Build for Production
 npm run build
-
-This creates a dist/ folder with production-ready files.
-
-To preview the production build locally:
-
 npm run preview
+
+This creates a production-ready dist/ folder.
+
+Deployment
+
+You can deploy to Railway, Vercel, or Netlify.
+
+Railway Example:
+
+Push to GitHub
+
+New Project → Deploy from GitHub → Select repo
+
+Set VITE_API_URL variable
+
+Build: npm install && npm run build
+
+Start: npm run preview or npx serve -s dist
+
+Notes
+
+Make sure backend is deployed and accessible.
+
+Enable CORS on backend for your frontend domain.
+
+Developed by Thansiya P
