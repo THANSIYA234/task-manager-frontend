@@ -1,18 +1,84 @@
-# React + Vite
+# Task Manager Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of the Task Manager application, built with **Vite + React**.  
+It connects to the backend deployed on Railway.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+[Frontend Live URL](https://your-frontend-railway-url.up.railway.app)  
+[Backend Live URL](https://task-manager-backend-production-0fc7.up.railway.app)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Features
 
-## Expanding the ESLint configuration
+- Login & Authentication
+- Task CRUD operations
+- Fully responsive for mobile and desktop
+- Connects to backend API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- React 18 + Vite
+- Tailwind CSS (or your styling library)
+- Fetch API / Axios for API requests
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/THANSIYA234/task-manager-frontend.git
+cd task-manager-frontend
+
+Install dependencies:
+
+npm install
+
+Create a .env file in the root folder with:
+
+VITE_API_URL=https://task-manager-backend-production-0fc7.up.railway.app
+Development
+
+Start the development server:
+
+npm run dev
+
+Open http://localhost:5173
+ in your browser.
+
+Build for Production
+npm run build
+npm run preview
+
+This creates a production-ready dist/ folder.
+
+Deployment
+
+You can deploy to Railway, Vercel, or Netlify.
+
+Railway Example:
+
+Push to GitHub
+
+New Project → Deploy from GitHub → Select repo
+
+Set VITE_API_URL variable
+
+Build: npm install && npm run build
+
+Start: npm run preview or npx serve -s dist
+
+Notes
+
+Make sure backend is deployed and accessible.
+
+Enable CORS on backend for your frontend domain.
+
+Developed by Thansiya P
