@@ -13,7 +13,7 @@ export default function SignUp() {
   const { mutate, isPending, error } = useRegister();
   const handleSubmit = (e) => {
     e.preventDefault();
-    setForm("");
+
     mutate(form, {
       onSuccess: () => {
         navigate({ to: "/login" });
