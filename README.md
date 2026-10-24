@@ -7,8 +7,8 @@ It connects to the backend deployed on Railway.
 
 ## Live Demo
 
-[Frontend Live URL](https://task-manager-frontend-production-9499.up.railway.app)  
-[Backend Live URL](https://task-manager-backend-production-0fc7.up.railway.app)
+[Frontend Live URL](https://task-manager-frontend-j20i.onrender.com)
+[Backend Live URL](https://task-manager-backend-1-j23n.onrender.com)
 
 ---
 
@@ -43,7 +43,7 @@ npm install
 
 Create a .env file in the root folder with:
 
-VITE_API_URL=https://task-manager-backend-production-0fc7.up.railway.app
+VITE_API_URL=https://task-manager-backend-1-j23n.onrender.com/api
 Development
 
 Start the development server:
@@ -82,3 +82,4 @@ Make sure backend is deployed and accessible.
 Enable CORS on backend for your frontend domain.
 
 Developed by Thansiya P
+```
